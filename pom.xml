@@ -17,7 +17,7 @@
 		</project.reporting.outputEncoding>
 
 		<app.runtime>4.3.0</app.runtime>
-		<mule.maven.plugin.version>3.8.6</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.4.2</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -30,20 +30,19 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.4.2</version>
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>${mule.version}</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
-						<applicationName>${appname}</applicationName>
-						<environment>${env}</environment>
-						<businessGroup>${business}</businessGroup>
-						<workers>${workers}</workers>
-						<region>${region}</region>
-						<workerType>${vCore}</workerType>
+						<muleVersion>4.3.0</muleVersion>
+						<username>pavani-rongala</username>
+						<password>Sunipk96*</password>
+						<applicationName>test</applicationName>
+						<environment>Sandbox</environment>
+						<workers>1</workers>
+						<region>us-east-1</region>
+						<workerType>MICRO</workerType>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
