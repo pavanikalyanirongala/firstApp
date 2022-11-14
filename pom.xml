@@ -42,6 +42,7 @@
 						<environment>${env}</environment>
 						<businessGroup>${business}</businessGroup>
 						<workers>${workers}</workers>
+						<region>${region}</region>
 						<workerType>${vCore}</workerType>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
