@@ -38,7 +38,7 @@
 						<muleVersion>4.3.0</muleVersion>
 						<username>pavani-rongala</username>
 						<password>Sunipk96*</password>
-						<applicationName>test</applicationName>
+						<applicationName>${muleapp}</applicationName>
 						<businessGroup>pwc</businessGroup>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
