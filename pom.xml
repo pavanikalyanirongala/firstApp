@@ -53,13 +53,7 @@
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
-			
-	   <plugin>
-		<groupId>org.mule.tools.maven</groupId>
-		<artifactId>mule-app-maven-plugin</artifactId>
-		<version>1.7</version>
-		<extensions>true</extensions>
-	</plugin>
+		
 	   <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
