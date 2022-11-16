@@ -1,0 +1,26 @@
+pipeline {
+	agent any
+    def mvnHome = tool 'mvn1'
+	stages {
+    
+    stage ('build')  {
+        bat "${mvnHome}/bin/mvn -e -X clean -f pom.xml"
+    }
+
+    stage ('Code Quality scan')  {
+       withSonarQubeEnv('sonar') {
+       bat "${mvnHome}/bin/mvn -f pom.xml -e -X  org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar"
+        }
+   }
+   stage("Quality Gate") {
+        timeout(time: 1, unit: 'MINUTES') {
+          waitForQualityGate abortPipeline: true
+      }
+    }
+   stage ('Deploy') {
+        bat "${mvnHome}/bin/mvn -e -X clean package deploy -DmuleDeploy -DskipTests -Dmuleapp=firstapppp"
+
+    }
+   
+}
+}
