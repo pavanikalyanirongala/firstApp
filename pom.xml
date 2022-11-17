@@ -41,14 +41,15 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.3.0</muleVersion>
-						<username>pavani-rongala</username>
-						<password>Sunipk96*</password>
 						<applicationName>${muleapp}</applicationName>
 						<businessGroup>pwc</businessGroup>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<region>us-east-1</region>
 						<workerType>MICRO</workerType>
+						<connectedAppClientId>41d74d6b92444ca5ac25cc8de09abf27</connectedAppClientId>
+						<connectedAppClientSecret>c87a89E09fCA4618B7bA4916827DE841</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
