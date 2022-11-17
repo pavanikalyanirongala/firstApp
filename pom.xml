@@ -41,7 +41,7 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-						<applicationName>${artifactId}</applicationName>
+						<applicationName>${muleapp}</applicationName>
 						<businessGroup>${businessGroup}</businessGroup>
 						<environment>${environment}</environment>
 						<workers>${workers}</workers>
