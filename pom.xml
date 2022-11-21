@@ -33,6 +33,8 @@
 				<configuration>
 				    <source>${maven.compiler.target}</source>
 				    <target>${maven.compiler.source}</target>
+				    <fork>true</fork>
+        			    <executable>C:\Users\rkalyani004\Downloads\java\java-1.8.0-openjdk-1.8.0.342-1.b07.redhat.windows.x86_64\bin\javac</executable>
 				</configuration>
 			    </plugin>
 			<plugin>
