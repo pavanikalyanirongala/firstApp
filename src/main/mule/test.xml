@@ -13,12 +13,15 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<ee:transform doc:name="Transform Message" doc:id="dda4567a-e558-4cd5-90b7-84f9e5ea1b2f" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
-output application/java
+output application/json
 ---
 {
+"message" : "Hi"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="End flow" doc:id="2ef172cb-a754-4446-94fc-f2fd20c6e917" message="#[payload]"/>
+		
 	</flow>
 
 	
