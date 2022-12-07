@@ -20,15 +20,28 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8
 		</project.reporting.outputEncoding>
-
+		
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>3.7.1</mule.maven.plugin.version>
-		
+			<maven.compiler.target>1.8</maven.compiler.target>
+   		<maven.compiler.source>1.8</maven.compiler.source>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.login>squ_5084c0a1afdeb2ab3a207cb11d705a1d17172468</sonar.login>
 	</properties>
 
 	<build>
 		<plugins>
-
+			 <plugin> 
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+				    <source>${maven.compiler.target}</source>
+				    <target>${maven.compiler.source}</target>
+				    <fork>true</fork>
+        			    <executable>C:\Users\rkalyani004\Downloads\java\java-1.8.0-openjdk-1.8.0.342-1.b07.redhat.windows.x86_64\bin\javac</executable>
+				</configuration>
+			    </plugin>
 			   
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
