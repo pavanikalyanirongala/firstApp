@@ -22,7 +22,7 @@
 		</project.reporting.outputEncoding>
 		
 		<app.runtime>4.4.0</app.runtime>
-		<mule.maven.plugin.version>3.7.1</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
 			<maven.compiler.target>1.8</maven.compiler.target>
    		<maven.compiler.source>1.8</maven.compiler.source>
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
